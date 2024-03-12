@@ -80,8 +80,5 @@ cask 'iterm2'
 cask 'sublime-text'
 
 
-
-
-
 # Fonts
 cask 'font-fira-code'
