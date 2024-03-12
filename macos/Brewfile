@@ -1,13 +1,87 @@
 # Taps
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'       # for Fira Code and a patched font for vim/neovim
 tap 'homebrew/cask-versions'    # for alternate versions of Casks
-tap 'yqrashawn/goku'            # For Goku
+tap 'eddieantonio/eddieantonio' # for imgcat
+# tap 'yqrashawn/goku'            # For Goku
 
 # Productivity and automation (see: https://tighten.com/blog/how-to-train-your-keyboard/)
-cask 'karabiner-elements'   # Remap keys and shortcuts at the kernel level
-cask 'hammerspoon'          # Take Karabiner's shortcuts and make the magic happen
+# cask 'karabiner-elements'   # Remap keys and shortcuts at the kernel level
+# cask 'hammerspoon'          # Take Karabiner's shortcuts and make the magic happen
 # brew 'yqrashawn/goku/goku'  # Manage Karabiner configs with ease
+
+
+# Install Binaries
+# brew 'atuin'            # shell history on steroids
+brew 'bat'              # like 'cat', with highlighting, git support and pagination
+brew 'coreutils'        # Those that come with macOS are outdated
+brew 'curl'
+brew 'docker-compose'   # Docker without the hassle
+# brew 'erdtree'          # like `tree` but with nicer options
+# brew 'exa'              # like `ls`
+brew 'fd'               # a nicer 'find'
+brew 'fzf'              # Fuzzy search
+brew 'gawk'             # Like awk, but with a g. Not to be confused with the large bird of prey
+brew 'git-delta'        # Provides much better diffs highlighting in the terminal
+# brew 'gnu-sed'          # sed, but a better version than what ships with OSX
+brew 'graphviz'         # graph/diagrams generation
+brew 'htop'
+brew 'httpie'           # to test HTTP calls from the CLI
+# brew 'hyperfine'        # a benchmarking tool
+# brew 'imgcat'           # like 'cat', but for images
+brew 'jq'               # When you want to manipulate JSON piped from httpie
+# brew 'mackup'           # to sync my Mac configs
+# brew 'mas'              # to install Mac App Store apps from the CLI
+# brew 'mise'             # an alternative to `asdf`, a version manager for all dev envs (replaces `pyenv`, `rbenv`, etc)
+# brew 'neofetch'
+# brew 'ripgrep'          # like grep, but faster
+# brew 'rm-improved'      # a better rm, with trash support
+# brew 'starship'         # a minimalist CLI prompt
+# brew 'telnet'
+brew 'tldr'             # like 'man' but for lazy people with deadlines
+# brew 'tmux'
+# brew 'tmuxinator'
+# brew 'tokei'            # to quickly count lines of code, like cloc, but faster
+brew 'tree'             # to display directories tree
+brew 'wget'
+# brew 'zoxide'           # a faster way to navigate your filesystem
+
+# Development
+brew 'bfg'              # for that time the intern added passwords to the repo
+brew 'exercism'         # to submit code solutions to Exercism.io
+brew 'gh'               # GitHub on the CLI
+brew 'git'              # OSX's version is out of date
+brew 'git-lfs'          # git's large file system
+
+
+# Development
+brew 'gh'               # GitHub on the CLI
+brew 'git'              # OSX's version is out of date
+brew 'git-lfs'          # git's large file system
+
+# Tools for work
+# brew 'assume-role'
+brew 'awscli'
+cask 'aws-vpn-client'
+cask 'session-manager-plugin'
+# brew 'gettext'      # to compile messages, don't forget to link!
+# brew 'libjpeg'
+# brew 'libmagic'
+# brew 'libmaxminddb' # for GeoIP
+# brew 'libpng'
+# brew 'libpq', link: true
+
+
+# Apps
+cask 'docker'
+# cask 'firefox'
+cask 'intellij-idea'
+cask 'iterm2'
+# cask 'slack'
+cask 'sublime-text'
+
+
+
+
 
 # Fonts
 cask 'font-fira-code'
