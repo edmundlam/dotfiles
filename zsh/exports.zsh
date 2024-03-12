@@ -1,3 +1,7 @@
+# Specify default editor. Possible values: vim, nano, ed etc.
+export EDITOR=subl
+export VISUAL=subl
+
 # Specify my language environment, you can check your configs with `locale`
 export LANG=en_CA.UTF-8
 export LC_ALL=en_CA.UTF-8
