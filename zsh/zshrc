@@ -91,6 +91,9 @@ HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000000
 SAVEHIST=$HISTSIZE
 
+
+eval "$(zoxide init --cmd cd zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
