@@ -78,7 +78,7 @@
     whitespace = space-before-tab,trailing-space
 
     editor = vim
-    pager = cat
+    pager = less
     autocrlf = input
 
 [interactive]
@@ -158,8 +158,8 @@
     light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
     side-by-side = true
 
-# [pull]
-#     rebase = true
+[pull]
+    rebase = true
 
 # [rebase]
 #     autoStash = true
