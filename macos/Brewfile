@@ -33,6 +33,7 @@ brew 'jq'               # When you want to manipulate JSON piped from httpie
 # brew 'mas'              # to install Mac App Store apps from the CLI
 # brew 'mise'             # an alternative to `asdf`, a version manager for all dev envs (replaces `pyenv`, `rbenv`, etc)
 # brew 'neofetch'
+cask 'rectangle'          # move and resize windows
 # brew 'ripgrep'          # like grep, but faster
 # brew 'rm-improved'      # a better rm, with trash support
 # brew 'starship'         # a minimalist CLI prompt

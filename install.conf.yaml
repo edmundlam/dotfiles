@@ -8,6 +8,9 @@
 
 
 - shell:
+    - description: Validating sudo credentials
+      command: "sudo --validate"
+
     - description: Installing Homebrew
       command: "[ -x \"$(which brew)\" ] || /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)\""
 
