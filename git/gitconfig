@@ -174,10 +174,7 @@
     side-by-side = true
 
 [pull]
-    rebase = true
-
-# [rebase]
-#     autoStash = true
+    ff = only
 
 [credential]
     helper = osxkeychain
