@@ -188,9 +188,6 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
 
-# [commit]
-#     gpgsign = true
-
 [user]
     email = 2623895+edmundlam@users.noreply.github.com
     name = Edmund Lam
