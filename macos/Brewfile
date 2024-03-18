@@ -58,6 +58,8 @@ brew 'git-lfs'          # git's large file system
 brew 'gh'               # GitHub on the CLI
 brew 'git'              # OSX's version is out of date
 brew 'git-lfs'          # git's large file system
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 
 # Tools for work
 # brew 'assume-role'
