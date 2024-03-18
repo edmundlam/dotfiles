@@ -194,3 +194,12 @@
 [user]
     email = 2623895+edmundlam@users.noreply.github.com
     name = Edmund Lam
+    signingkey = /Users/elam/.ssh/id_elam.pub
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/git_allowed_signers
+
+[commit]
+    gpgsign = true
