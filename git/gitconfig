@@ -8,9 +8,13 @@
     lg = log --graph --stat --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%n %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%n' --all
 
     logo = log --oneline --decorate --format='%C(yellow)%h%x09%Cgreen%ad%x09%Creset%s %Cblue%an %Cred%d' --date=short
+    local-clean = remote update --prune | git branch -vv | awk '/: gone]/{print }'
 
     # View the current working tree status using the short format
     s = status -s
+
+    r = !git remote update
+    m = !git checkout master && git remote update
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
@@ -37,6 +41,17 @@
 
     # Show the last 10 branches worked on, sorted by last updated
     br = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+
+    # Open a PR window, from which you can easily naviguate to an already opened PR for that branch
+    pr = "!f() { open "https://github.com/PokaInc/$(basename "$(git rev-parse --show-toplevel)")/pull/new/$(git rev-parse --abbrev-ref HEAD)"; };f"
+
+    # Ignore local changes to git-tracked files
+    ignore = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
+
+    # Push branch to remote repo
+    pushu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 
     # Credit an author on the latest commit
     credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
@@ -67,7 +82,7 @@
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
-    excludesfile = ~/.dotfiles/.gitignore_global
+    excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
 
     # Treat spaces before tabs, lines that are indented with 8 or more spaces, and

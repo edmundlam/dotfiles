@@ -33,3 +33,6 @@ Thumbs.db
 *~
 .ftpquota
 .DS_Store
+
+# Run configurations
+*.xml
