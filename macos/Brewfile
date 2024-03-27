@@ -15,7 +15,6 @@ tap 'eddieantonio/eddieantonio' # for imgcat
 brew 'bat'              # like 'cat', with highlighting, git support and pagination
 brew 'coreutils'        # Those that come with macOS are outdated
 brew 'curl'
-brew 'docker-compose'   # Docker without the hassle
 # brew 'erdtree'          # like `tree` but with nicer options
 # brew 'exa'              # like `ls`
 brew 'fd'               # a nicer 'find'
@@ -72,10 +71,11 @@ cask 'session-manager-plugin'
 # brew 'libmaxminddb' # for GeoIP
 # brew 'libpng'
 # brew 'libpq', link: true
+cask 'docker'
+brew 'docker-compose'   # Docker without the hassle
 
 
 # Apps
-cask 'docker'
 # cask 'firefox'
 cask 'intellij-idea'
 cask 'iterm2'
