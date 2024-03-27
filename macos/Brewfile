@@ -76,6 +76,7 @@ brew 'docker-compose'   # Docker without the hassle
 
 
 # Apps
+cask 'coconutbattery'
 # cask 'firefox'
 cask 'intellij-idea'
 cask 'iterm2'
