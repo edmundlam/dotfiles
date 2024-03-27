@@ -94,6 +94,7 @@ SAVEHIST=$HISTSIZE
 
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
+eval "$(pyenv init -)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
