@@ -59,6 +59,7 @@ brew 'git'              # OSX's version is out of date
 brew 'git-lfs'          # git's large file system
 brew 'pyenv'
 brew 'pyenv-virtualenv'
+brew 'node'
 
 # Tools for work
 # brew 'assume-role'
