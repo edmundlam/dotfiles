@@ -14,7 +14,16 @@
     s = status -s
 
     r = !git remote update
-    m = !git checkout master && git remote update
+
+    m = "!f() { \
+        if git rev-parse --verify master &>/dev/null; then \
+            git checkout master && git remote update; \
+        elif git rev-parse --verify main &>/dev/null; then \
+            git checkout main && git remote update; \
+        else \
+            echo 'Neither master nor main branch found'; \
+        fi \
+    }; f"
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
