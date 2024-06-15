@@ -6,6 +6,10 @@
     ~/.vimrc: vim/vimrc
     ~/.zshrc: zsh/zshrc
 
+    # Karabiner, Hammerspoon and Goku
+    ~/.config/karabiner.edn: karabiner/karabiner.edn
+    ~/.hammerspoon: hammerspoon
+
 
 - shell:
     - description: Validating sudo credentials

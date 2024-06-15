@@ -1,0 +1,83 @@
+{
+    :templates {
+        :launch "open -a %s"
+        ; :hs "open -g hammerspoon://hyper?action=%s\\&target=%s"
+    }
+
+    :devices {
+        :iris-ce [{:product_id 5462 :vendor_id 51984}]
+    }
+
+    :layers {
+        :launch {:key :caps_lock :alone {:key :escape} :condi [:!iris-ce]}
+    }
+
+    :main [
+        {
+            :des "Default Launch layer"
+            :rules [:launch
+                ; [:a [:launch "Activity\\ Monitor.app"]]
+                [:s [:launch "Slack.app"]]
+                ; [:d [:launch "Discord.app"]]
+                [:b [:launch "Firefox.app"]]
+                ; [:k [:launch "kitty.app"]]
+                ; [:m [:launch "Mail.app"]]
+                ; [:c [:launch "Calendar.app"]]
+                ; [:f [:launch "Fellow.app"]]
+                [:z [:launch "zoom.us.app"]]
+                ; [:r [:launch "Obsidian.app"]]
+                ; [:t [:launch "Ivory.app"]]
+                [:i [:launch "IntelliJ\\ IDEA.app"]]
+            ]
+        }
+        {
+            :des "Split KB Launch layer"
+            :rules [
+                [:condi :iris-ce]
+                [:!!a [:launch "Activity\\ Monitor.app"]]
+                [:!!s [:launch "Slack.app"]]
+                ; [:!!d [:launch "Discord.app"]]
+                [:!!b [:launch "Firefox.app"]]
+                ; [:!!k [:launch "kitty.app"]]
+                ; [:!!m [:launch "Mail.app"]]
+                ; [:!!c [:launch "Calendar.app"]]
+                ; [:!!f [:launch "Fellow.app"]]
+                [:!!z [:launch "zoom.us.app"]]
+                ; [:!!r [:launch "Obsidian.app"]]
+                ; [:!!t [:launch "Ivory.app"]]
+                [:!!i [:launch "IntelliJ\\ IDEA.app"]]
+            ]
+        }
+        ; {
+        ;     :des "Default Hammerspoon"
+        ;     :rules [:launch
+        ;         [:o [:hs "open" "default"]]
+        ;         ; [:w [:hs "slack-rw-wave" "default"]]
+        ;     ]
+        ; }
+        ; {
+        ;     :des "Split KB Hammerspoon"
+        ;     :rules [
+        ;         [:condi :iris-ce]
+        ;         [:!!o [:hs "open" "default"]]
+        ;         ; [:!!w [:hs "slack-rw-wave" "default"]]
+        ;     ]
+        ; }
+    ]
+}
+
+; Goku definitions
+; !  | means mandatory
+; #  | means optional
+; C  | left_command
+; T  | left_control
+; O  | left_option
+; S  | left_shift
+; F  | fn
+; Q  | right_command
+; W  | right_control
+; E  | right_option
+; R  | right_shift
+; P  | caps_lock
+; !! | mandatory command + control + optional + shift (hyper)
+; ## | optional any
