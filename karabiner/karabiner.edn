@@ -17,7 +17,7 @@
             :des "Default Launch layer"
             :rules [:launch
                 ; [:a [:launch "Activity\\ Monitor.app"]]
-                [:s [:launch "Slack.app"]]
+                [:s [:launch "Sublime\\ Text.app"]]
                 ; [:d [:launch "Discord.app"]]
                 [:b [:launch "Firefox.app"]]
                 ; [:k [:launch "kitty.app"]]
@@ -35,7 +35,7 @@
             :rules [
                 [:condi :iris-ce]
                 [:!!a [:launch "Activity\\ Monitor.app"]]
-                [:!!s [:launch "Slack.app"]]
+                [:!!s [:launch "Sublime\\ Text.app"]]
                 ; [:!!d [:launch "Discord.app"]]
                 [:!!b [:launch "Firefox.app"]]
                 ; [:!!k [:launch "kitty.app"]]
