@@ -2,12 +2,12 @@
 tap 'homebrew/cask-fonts'       # for Fira Code and a patched font for vim/neovim
 tap 'homebrew/cask-versions'    # for alternate versions of Casks
 tap 'eddieantonio/eddieantonio' # for imgcat
-# tap 'yqrashawn/goku'            # For Goku
+tap 'yqrashawn/goku'            # For Goku
 
 # Productivity and automation (see: https://tighten.com/blog/how-to-train-your-keyboard/)
-# cask 'karabiner-elements'   # Remap keys and shortcuts at the kernel level
-# cask 'hammerspoon'          # Take Karabiner's shortcuts and make the magic happen
-# brew 'yqrashawn/goku/goku'  # Manage Karabiner configs with ease
+cask 'karabiner-elements'   # Remap keys and shortcuts at the kernel level
+cask 'hammerspoon'          # Take Karabiner's shortcuts and make the magic happen
+brew 'yqrashawn/goku/goku'  # Manage Karabiner configs with ease
 
 
 # Install Binaries
@@ -63,7 +63,7 @@ brew 'node'
 
 # Tools for work
 # brew 'assume-role'
-brew 'awscli'
+# brew 'awscli'
 cask 'aws-vpn-client'
 cask 'session-manager-plugin'
 # brew 'gettext'      # to compile messages, don't forget to link!
