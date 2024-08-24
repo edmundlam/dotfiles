@@ -28,6 +28,7 @@
                 ; [:r [:launch "Obsidian.app"]]
                 ; [:t [:launch "Ivory.app"]]
                 [:i [:launch "IntelliJ\\ IDEA.app"]]
+                [:e [:launch "iTerm.app"]]
             ]
         }
         {
@@ -35,9 +36,11 @@
             :rules [
                 [:condi :iris-ce]
                 [:!!a [:launch "Activity\\ Monitor.app"]]
+                [:!!e [:launch "iTerm.app"]]
                 [:!!s [:launch "Sublime\\ Text.app"]]
                 ; [:!!d [:launch "Discord.app"]]
                 [:!!b [:launch "Firefox.app"]]
+                [:!!n [:launch "Firefox.app"]]
                 ; [:!!k [:launch "kitty.app"]]
                 ; [:!!m [:launch "Mail.app"]]
                 ; [:!!c [:launch "Calendar.app"]]
