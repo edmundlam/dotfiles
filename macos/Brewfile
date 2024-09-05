@@ -81,6 +81,7 @@ cask 'coconutbattery'
 # cask 'firefox'
 cask 'intellij-idea'
 cask 'iterm2'
+cask 'pycharm'
 # cask 'slack'
 cask 'sublime-text'
 
