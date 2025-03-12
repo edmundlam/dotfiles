@@ -11,7 +11,7 @@ brew 'yqrashawn/goku/goku'  # Manage Karabiner configs with ease
 
 
 # Install Binaries
-# brew 'atuin'            # shell history on steroids
+brew 'atuin'            # shell history on steroids
 brew 'bat'              # like 'cat', with highlighting, git support and pagination
 brew 'coreutils'        # Those that come with macOS are outdated
 brew 'curl'
@@ -79,7 +79,7 @@ brew 'docker-compose'   # Docker without the hassle
 # Apps
 cask 'coconutbattery'
 # cask 'firefox'
-cask 'intellij-idea'
+#cask 'intellij-idea'
 cask 'iterm2'
 cask 'pycharm'
 # cask 'slack'
