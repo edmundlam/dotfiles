@@ -42,6 +42,7 @@ brew 'tldr'             # like 'man' but for lazy people with deadlines
 # brew 'tmuxinator'
 # brew 'tokei'            # to quickly count lines of code, like cloc, but faster
 brew 'tree'             # to display directories tree
+brew 'uv'               # An extremely fast Python package and project manager, written in Rust.
 brew 'wget'
 brew 'zoxide'           # a faster way to navigate your filesystem
 
@@ -84,6 +85,7 @@ cask 'iterm2'
 cask 'pycharm'
 # cask 'slack'
 cask 'sublime-text'
+cask 'bruno'			# offline-first open-source API client
 
 
 # Fonts

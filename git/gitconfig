@@ -8,6 +8,9 @@
     lg = log --graph --stat --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%n %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%n' --all
 
     logo = log --oneline --decorate --format='%C(yellow)%h%x09%Cgreen%ad%x09%Creset%s %Cblue%an %Cred%d' --date=short
+    logos = log --oneline \
+              --format='%C(yellow)%h%x09%Cgreen%ad%x09%Creset%s' \
+              --date=short
     local-clean = remote update --prune | git branch -vv | awk '/: gone]/{print }'
 
     # View the current working tree status using the short format
@@ -84,6 +87,8 @@
 
     # For those times you just have to pat someone on the back
     fame = python --version -m gitfame
+
+    ifl = !git-ifl
 
 [apply]
     # Detect whitespace errors when applying a patch
