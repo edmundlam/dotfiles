@@ -11,3 +11,5 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # Prevent Homebrew from following redirects from HTTPS to HTTP
 export HOMEBREW_NO_INSECURE_REDIRECT=1
+
+# export PATH="/usr/local/opt/ruby/bin:$PATH"

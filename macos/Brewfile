@@ -60,6 +60,8 @@ brew 'git-lfs'          # git's large file system
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'node'
+brew 'chruby'
+brew 'ruby-install'
 
 # Tools for work
 # brew 'assume-role'
@@ -79,9 +81,12 @@ brew 'docker-compose'   # Docker without the hassle
 # Apps
 cask 'coconutbattery'
 # cask 'firefox'
-#cask 'intellij-idea'
+# cask 'intellij-idea'
 cask 'iterm2'
 cask 'pycharm'
+cask 'chromium'
+cask 'google-chrome'
+cask 'visual-studio-code'
 # cask 'slack'
 cask 'sublime-text'
 
