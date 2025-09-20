@@ -21,9 +21,6 @@
     - description: Updating Homebrew
       command: "brew update"
 
-    - description: Installing brew bundler
-      command: "brew tap homebrew/bundle"
-
     - description: Installing Brewfile bundle
       command: "brew bundle --file=macos/Brewfile"
       stdout: true
