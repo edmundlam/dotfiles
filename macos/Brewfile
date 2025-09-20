@@ -1,6 +1,6 @@
 # Taps
-tap 'homebrew/cask-fonts'       # for Fira Code and a patched font for vim/neovim
-tap 'homebrew/cask-versions'    # for alternate versions of Casks
+# tap 'homebrew/cask-fonts'       # for Fira Code and a patched font for vim/neovim
+# tap 'homebrew/cask-versions'    # for alternate versions of Casks
 tap 'eddieantonio/eddieantonio' # for imgcat
 tap 'yqrashawn/goku'            # For Goku
 
