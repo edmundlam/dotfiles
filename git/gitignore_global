@@ -35,4 +35,8 @@ Thumbs.db
 .DS_Store
 
 # Run configurations
-*.xml
+#*.xml
+
+# context folders
+context/
+.claude/settings.local.json

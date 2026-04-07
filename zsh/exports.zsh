@@ -13,3 +13,6 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Connect libpq
+export PATH="/usr/local/opt/libpq/bin:$PATH"
